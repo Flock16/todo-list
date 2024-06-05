@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    /* border: solid red; */
+    width: 100%;
+    min-height: 100vh;
+    /* background: #121212; */
+    background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgba(14, 9, 121, 1) 22%, rgba(0, 212, 255, 1) 100%);
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 650px;
+    background: #fff;
+    /* margin: 100px auto 20px; */
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    /* border: solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    /* Take up all the space avaliable in the div*/
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+/* Stop chrome autofill changing the input background color */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 0s 600000s, color 0s 600000s !important;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 93px 12px 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    word-break: break-all;
+    margin-bottom: 10px;
+    background: #edeef0;
+    border-radius: 30px;
+}
+
+ul li input {
+    list-style: none;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    word-break: break-all;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+
+.delete {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.edit {
+    position: absolute;
+    right: 43px;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.tick {
+    position: absolute;
+    right: 43px;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.text {
+    font-size: 17px;
+}
+
+.span:hover {
+    /* background: #edeef0; */
+    background: #fff;
+}
